@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/mycss.css">
+  <title>MainPage</title>
+</head>
+<script>
+  function focusText() {
+    document.getElementById("txt").focus();
+  }
+  function blurText() {
+    document.getElementById('txt').value = "";
+    document.getElementById("txt").blur();
+  }
+  function Baidu() {
+    wdv = document.getElementById("txt").value;
+    window.open("http://www.baidu.com/s?wd=" + wdv);
+  }
+</script>
+
+<body onkeydown="if(event.keyCode==13){focusText()}">
+  <div class="s1">
+    <input type="text" id="txt" placeholder="Search..."
+      onkeydown="if(event.keyCode==13){Baidu()}else if(event.keyCode==27){blurText()}">
+  </div>
+  <div class="container">
+    <div class="box">
+      <a href="http://github.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/github.png" />
+        </div>
+      </a>
+      <p>Github</p>
+    </div>
+    <div class="box">
+      <a href="https://wx.qq.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/wechat.png" />
+        </div>
+      </a>
+      <p>WeChat</p>
+    </div>
+    <div class="box">
+      <a href="https://www.bilibili.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/bilibili.png" />
+        </div>
+      </a>
+      <p>Bilibili</p>
+    </div>
+    <div class="box">
+      <a href="https://mail.163.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/mail.png" />
+        </div>
+      </a>
+      <p>Mail</p>
+    </div>
+    <div class="box">
+      <a href="https://pan.baidu.com/disk/home?#/" target="_blank">
+        <div class="img">
+          <img src="./icons/netdisk.png" />
+        </div>
+      </a>
+      <p>Netdisk</p>
+    </div>
+    <div class="box">
+      <a href="https://fanyi.qq.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/translate.png" />
+        </div>
+      </a>
+      <p>Translate</p>
+    </div>
+    <div class="box">
+      <a href="https://www.zhihu.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/zhihu.png" />
+        </div>
+      </a>
+      <p>Zhihu</p>
+    </div>
+    <div class="box">
+      <a href="https://music.163.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/music.png" />
+        </div>
+      </a>
+      <p>Music</p>
+    </div>
+    <div class="box">
+      <a href="https://leetcode-cn.com/" target="_blank">
+        <div class="img">
+          <img src="./icons/leetcode.png" />
+        </div>
+      </a>
+      <p>LeetCode</p>
+    </div>
+  </div>
+</body>
+
+</html>
